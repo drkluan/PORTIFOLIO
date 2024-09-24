@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Luan</title>
 </head>
+
 <body>
-    
+
     <header class="header">
-        <a href="#" class="logo">Luan.</a>
+        <a href="#" class="logo">Luan ;)</a>
         <nav class="navbar">
             <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
             <a href="#">Portifolio</a>
-            <a href="#">Contact</a>
+            <a href="#Contact">Contact</a>
         </nav>
     </header>
 
     <section class="home">
         <div class="home-content">
             <h1>Olá, Eu sou Luan</h1>
-            <h3>FrontEnd Devolper</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequatur delectus excepturi, eos unde beatae alias, expedita laborum minima ipsa eius ut neque corporis eligendi! Debitis, tempore.</p>
+            <h3>Front-end Devolper</h3>
+            <p>Em Busca de ampliar meus conhecimentos, buscando uma oportunidade de mostrar e desenvolver meus talentos.
+                Visando o crecimento pessoal e corporativo junto com a empresa.</p>
             <div class="btn-box">
                 <a href="#">Hire Me</a>
                 <a href="#">Let´s Talk</a>
@@ -32,11 +35,108 @@
         </div>
 
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.linkedin.com/in/luan-jos%C3%A9-da-silva-garcia-953a22267/"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/drkluan"><i class='bx bxl-github'></i></a>
         </div>
     </section>
 
+    <section class="about" href="#About">
+        <div class="main">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Devolper Front-end</h5>
+                <p>Estou em busca de ampliar meus conhecimentos e desenvolver minhas habilidades, almejando uma
+                    oportunidade que me permita mostrar meu potencial. Tenho como objetivo contribuir para o crescimento
+                    pessoal e corporativo, alinhando meus talentos às necessidades da empresa. Acredito que o
+                    aprendizado contínuo é fundamental para o sucesso, e estou motivado a enfrentar desafios que me
+                    permitam crescer e agregar valor à equipe.</p>
+                <p>Estou disposto a colaborar, aprender e compartilhar experiências, sempre buscando soluções criativas
+                    e inovadoras. Minha dedicação e comprometimento serão fundamentais para impulsionar resultados
+                    positivos e fortalecer a cultura organizacional.</p>
+                <p>Estou ansioso para fazer parte de um ambiente que valorize o desenvolvimento profissional e que
+                    ofereça oportunidades de crescimento mútuo.</p>
+                <div class="btn-box">
+                    <a href="#">Let´s Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Services" href="#Services">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card"><i class='bx bx-devices'></i>
+                <h5>Web Devolpment</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, rerum.</p>
+                    <div class="btn-box">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card"><i class='bx bx-devices'></i>
+                <h5>Web Devolpment</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, rerum.</p>
+                    <div class="btn-box">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card"><i class='bx bx-devices'></i>
+                <h5>Web Devolpment</h5>
+                <div class="pra">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, rerum.</p>
+                    <div class="btn-box">
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contact-me" href="#Contact">
+        <div class="title">
+            <h2>Contact</h2>
+        </div>
+
+        <form autocomplete="off">
+            <div class="mb-2">
+                <h2>Nome</h2>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <h2>Email</h2>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <h2>Menssage</h2>
+                <label asp-for="Menssage"></label>
+                <textarea asp-for="Menssage"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-primary">Limpar</button>
+        </form>
+
+
+    </section>
+
 </body>
+
 </html>
